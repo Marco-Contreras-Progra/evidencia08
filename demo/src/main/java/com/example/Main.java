@@ -19,6 +19,11 @@ public class Main {
             equipo1.eliminarJugador(jugador1);
             equipo1.eliminarJugador(jugador2);
             equipo1.listarJugadores();
+
+             // Cambiar capitán
+        equipo1.agregarJugador(jugador2);
+        equipo1.asignarCapitan(jugador2);
+        equipo1.listarJugadores();
     
     }
 }
