@@ -1,14 +1,24 @@
+package com.example;
+
 public class Jugador {
-	private String _nombre;
-	private String _rut;
-	private Equipo _equipo;
-	private boolean _esCapitan;
+	private String nombre;
+    private String rut;
+    private Equipo equipo;
+    private boolean esCapitan = false;
 
-	public void asignarEquipo() {
-		throw new UnsupportedOperationException();
-	}
+	public Jugador(String nombre, String rut) {
+        this.nombre = nombre;
+        this.rut = rut;
+    }
 
-	public void establecerCapitan() {
-		throw new UnsupportedOperationException();
-	}
+   public void asignarEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+
+    public void establecerCapitan() {
+        this.esCapitan = true;
+    }
+	public String getNombre() {
+        return nombre;
+    }
 }
